@@ -7,11 +7,28 @@
 </head>
 <body>
     <h1>Roubles to Dollars Today!!!</h1>
-    <p>Enter the amount in dollars:</p>
-    <input type="number" id="dollarsInput" placeholder="Enter amount in dollars">
-    <button id="convertButton">Convert</button>
+    <form class="form">
+        <label for="numeral">Enter the amount in dollars:</label>
+        <div>
+        <input id="numeral" type="number" placeholder="e.g. 2022" required autofocus>
+        <button type="submit">Convert!</button>
+        </div>
+    </form>
     <p id="result"></p>
 
     <script src="index.js"></script>
+    <script>
+        const form = document.querySelector('.form');
+        const result = document.querySelector('#result');
+    
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            var userInput = e.target[0].value;
+            console.log(userInput);
+            var res = convertDollarsToRoubles(userInput, 100);
+            console.log(res)
+            result.textContent = res;
+    });
+    </script>
 </body>
 </html>
