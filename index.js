@@ -1,1 +1,6 @@
-// Function to convert dollars to roubles will go here
+// Function to convert dollars to roubles
+function convertDollarsToRoubles(dollars, exchangeRate) {
+    return dollars * exchangeRate;
+}
+
+module.exports = { convertDollarsToRoubles };
