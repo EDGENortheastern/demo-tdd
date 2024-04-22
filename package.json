@@ -1,0 +1,22 @@
+{
+  "name": "demo-tdd",
+  "version": "1.0.0",
+  "description": "demo-ttd-start",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EDGENortheastern/demo-tdd.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EDGENortheastern/demo-tdd/issues"
+  },
+  "homepage": "https://github.com/EDGENortheastern/demo-tdd#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
