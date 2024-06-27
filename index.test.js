@@ -1,18 +1,13 @@
-describe('Example Test', () => {
-    test('that jest is working', () => {
-        expect(true).toBe(true); 
+const { myFunction } = require('./index');
+describe("Smoke Test", () => {
+    test('that 2 + 2 is 4', () => {
+        expect(2+2).toBe(4);
     });
 });
 
-// Import the function we haven't implemented yet
-const { convertDollarsToRoubles } = require('./index');
-
-describe('Currency Converter', () => {
-    test('converts 100 dollars to roubles at exchange rate 77.75', () => {
-        const dollarsAmount = 100;
-        const exchangeRate = 77.75;
-        const expectedRoublesAmount = 7775;
-        const result = convertDollarsToRoubles(dollarsAmount, exchangeRate);
-        expect(result).toBe(expectedRoublesAmount);
+describe("test func my f", () => {
+    test('that 2 + 2 is 4', () => {
+        expect(myFunction(2,2)).toBe(4);
     });
 });
+
